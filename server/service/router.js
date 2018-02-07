@@ -9,8 +9,12 @@ module.exports = (app) => {
 
   // LOGIN PAGE
   app.get('/logout', (req,res) => {
-    req.session = null;
-    res.redirect('/');
+    database.setUserLoggedOut(req.session.user)
+            .then(() => {
+              req.session = null;
+              res.redirect('/');
+            })
+            .catch(err => res.status(500).send({body: 'Internal server error', code: 500}))
   });
 
   // LOGIN PAGE
