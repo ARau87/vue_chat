@@ -7,7 +7,7 @@ const userSchema = new Schema({
   password: {type:String, required:true},
   image: {type:String},
   nickname: {type:String, required:true},
-  created: {type:String, required:true},
+  created: {type:String, default: Date.now()},
   isLoggedIn: {type:Boolean, default:false}
 });
 
