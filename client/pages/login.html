@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Chat - Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Yrsa:400,600" rel="stylesheet"> 
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header row">
+      <div class="header-logo l3o12">
+        Vue-Chat
+      </div>
+      <nav class="header-nav l9o12">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a class="link-cta" href="/register">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="app">
+      <login :message="loginMessage" @login="login"></login>
+    </div>
+
+    <script src="/resources/js/components/common.js"></script>
+    <script src="/resources/js/components/login.js"></script>
+    <script src="/resources/js/app.js"></script>
+  </body>
+</html>

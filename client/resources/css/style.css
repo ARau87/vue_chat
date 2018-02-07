@@ -1,0 +1,332 @@
+/* #### COLORS ####*/
+/*
+  Darkest: #003B46 #011A27
+           #07575B #1E656D
+           #66A5AD #F1F3CE
+  Lightest:#C4DFE6 #F62A00
+
+*/
+
+/* #### BASIC RESET #### */
+* {
+  box-sizing: border-box;
+  color: #000;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #F1F3CE;
+  font-size: 20px;
+  font-family: 'Yrsa', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* #### HEADER AND NAV ####*/
+header {
+  background-color: #011A27;
+}
+
+.header-logo {
+  padding-left: 10px;
+  margin-top: 20px;
+  color: #F1F3CE;
+}
+
+header nav a:visited,  header nav a:link, header nav a {
+  color: #F1F3CE;
+  border-bottom: 2px solid  #011A27;
+  transition: border 0.2s;
+}
+
+header nav a:hover,  header nav a:active{
+  color: #F1F3CE;
+  border-bottom: 2px solid  #F1F3CE;
+  text-decoration: none;
+}
+
+.link-cta:visited,  .link-cta:link, .link-cta {
+  color: #F62A00;
+  border: 2px solid  #F62A00;
+  border-radius: 8px 8px;
+  background-color: #011A27;
+  padding: 5px 10px;
+}
+
+.link-cta:hover,  .link-cta:active{
+  color: #011A27;
+  background-color: #F62A00;
+  border: 2px solid  #F62A00;
+  border-radius: 8px 8px;
+}
+
+header ul {
+  text-align: right;
+  padding-right: 20px;
+}
+
+header li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* #### FORM STYLES #### */
+
+input {
+  border-radius: 8px 8px;
+  border-style: solid;
+  border-color: #011A27;
+  background-color: #F1F3CE;
+  color: #011A27;
+  padding: 5px 10px;
+}
+
+button {
+  border-radius: 8px 8px;
+  border-style: solid;
+  border-color: #011A27;
+  background-color: #011A27;
+  color: #F1F3CE;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+button:hover {
+  border-color: #011A27;
+  background-color: #F1F3CE;
+  color: #011A27;
+}
+
+/* #### LAYOUT #### */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px){
+  .l12o12 {
+    width: 100%;
+  }
+
+  .l6o12 {
+    width: 50%;
+  }
+
+  .l3o12 {
+    width: 25%;
+  }
+  .l9o12 {
+    width: 75%;
+  }
+}
+
+/* #### LOBBY PAGE #### */
+
+.chat-thumbnail {
+  text-align: center;
+  background-color: #F1F3CE;
+  transition: background-color 0.2s, color 0.2s;
+}
+.chat-thumbnail:hover {
+  background-color: #1E656D;
+}
+
+.chat-thumbnail:hover h3 {
+  color: #F1F3CE;
+}
+
+/* #### CHAT PAGE #### */
+
+.chat-users {
+  border: 2px solid #1E656D;
+}
+
+.chat-users h2 {
+  font-size: 1.5em;
+  padding-top: 0;
+}
+
+.chat-header h1{
+  width: 100%;
+  text-align: center;
+}
+
+.chat-infos {
+  min-height: 90vh;
+}
+
+.chat-messages h2 {
+  padding: 5px 10px;
+}
+
+.chat-users h2 {
+  padding: 5px 10px;
+}
+
+.chat-user {
+  padding: 5px 10px;
+}
+
+.chat-message {
+  font-size: 1.1em;
+}
+
+.chat-messages {
+  margin-left: 1px;
+  border-left: 2px solid #1E656D;
+  border-top: 2px solid #1E656D;
+  border-bottom: 2px solid #1E656D;
+}
+
+.chat-input-wrapper {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-thumbnail:hover {
+  cursor: pointer;
+}
+
+.chat-own-message {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.chat-other-message {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.chat-own-message .chat-message-user span {
+  color: green;
+}
+
+.chat-other-message .chat-message-user span{
+  color: red;
+}
+
+.chat-message-user span {
+  border-bottom: 2px solid #011A27;
+  font-size: 0.8em;
+}
+
+.chat-message-body {
+  padding-top: 5px;
+  font-family: 'Kalam', cursive;
+}
+
+/* #### HOME PAGE #### */
+.hero {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-wrapper {
+  width: 10%;
+  margin: 0 42%;
+  text-align: center;
+}
+
+.btn-wrapper a {
+  padding: 10px 0;
+  min-width: 120px;
+  border-radius: 10px 10px;
+  margin-left: 5%;
+  border: 2px solid #011A27;
+  background-color: #F1F3CE;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-wrapper a:hover {
+  padding: 10px 0;
+  min-width: 120px;
+  border-radius: 10px 10px;
+  margin-left: 5%;
+  border: 2px solid #011A27;
+  background-color: #011A27;
+  color: #F1F3CE;
+}
+
+/* #### LOGIN PAGE ####*/
+
+.login h2 {
+  margin-top: 50px;;
+  width: 100%;
+  text-align: center;
+}
+
+.login-message {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.login-form {
+  text-align: center;
+  margin: 20px 20%;
+  min-width: 60%;
+}
+
+.login-form input {
+  min-width: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 1%;
+}
+
+.login-form label {
+  display: block;
+  min-width: 100px;
+}
+
+/* #### Registration page #### */
+
+.register h2 {
+  margin-top: 50px;;
+  width: 100%;
+  text-align: center;
+}
+
+.register-message {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.register-form {
+  text-align: center;
+  margin: 20px 20%;
+  min-width: 60%;
+}
+
+.register-form input {
+  min-width: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 1%;
+}
+
+.register-form label {
+  display: block;
+  min-width: 100px;
+}
